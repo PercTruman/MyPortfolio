@@ -335,6 +335,7 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+    margin: 0 auto;
 }
 @media (min-width: 600px) {
     .about-me {
@@ -382,13 +383,16 @@ header {
 }
 
 .portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     }
 
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    padding: 10px;
 }
 
 .portfolio__img {
